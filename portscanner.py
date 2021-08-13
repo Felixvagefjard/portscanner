@@ -33,7 +33,6 @@ for port in range(50, 80 + 1):
         print("\n*** Stopping scan ***")
         exit()
     except:
-        #print("Port is closed")
         pass
 
 #For loop that prints every port number in the open_ports list
@@ -44,9 +43,3 @@ for port in open_ports:
 t2 = datetime.now()
 total = t2 - t1
 print(f"\nPort scan completed in {total}")
-
-"""
-to do
-Multithread
-Port range / specific port
-"""
